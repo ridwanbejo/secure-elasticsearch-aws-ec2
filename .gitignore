@@ -1,0 +1,6 @@
+*key-pair
+*key-pair.pub
+.terraform
+.terraform.lock.hcl
+*.backup
+*.tfstate
