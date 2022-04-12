@@ -6,13 +6,15 @@ It made by Terraform to provision Elasticsearch instance at AWS EC2.
 
 1. Download AWS Secret and configure it by using `aws configure` from your console. Follow through the instruction and provide the correct value for each question.
 
-2. Clone this ansible repo [https://github.com/ridwanbejo/ansible-secure-elasticsearch](https://github.com/ridwanbejo/ansible-secure-elasticsearch) because we need to bootstrap the Elasticsearch
+2. Ensure you have Terraform and Ansible installed properly in your local machine.
 
-3. Clone this repo to your directory
+3. Clone this ansible repo [https://github.com/ridwanbejo/ansible-secure-elasticsearch](https://github.com/ridwanbejo/ansible-secure-elasticsearch) because we need to bootstrap the Elasticsearch
 
-3. Change your current directory to the repo
+4. Clone this repo to your directory
 
-4. generate key pairs for EC2 SSH access inside the cloned repo
+5. Change your current directory to the repo
+
+6. generate key pairs for EC2 SSH access inside the cloned repo
 
 ```
 ssh-keygen -f singapore-region-key-pair
@@ -24,6 +26,7 @@ chmod 400 singapore-region-key-pair.pem
 1. plan the terraform
 
 ```
+terraform init
 terraform plan -var-file=test.tfvars
 ```
 
