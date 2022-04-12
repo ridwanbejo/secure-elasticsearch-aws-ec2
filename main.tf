@@ -110,6 +110,8 @@ resource "aws_instance" "secure-elasticsearch" {
   security_groups = [ "${aws_security_group.default_public.id}" ] 
 }
 
+/*
+
 resource "aws_instance" "secure-elasticsearch-data-1" {
   ami           = "ami-0e763a959ec839f5e"
   instance_type = "t2.micro"
@@ -149,3 +151,5 @@ resource "aws_instance" "secure-elasticsearch-data-2" {
 
   security_groups = [ "${aws_security_group.default_public.id}" ] 
 }
+
+*/
