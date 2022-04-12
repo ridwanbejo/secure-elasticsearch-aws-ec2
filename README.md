@@ -6,7 +6,9 @@ It made by Terraform to provision Elasticsearch instance at AWS EC2.
 
 1. download AWS Secret
 
-2. Clone this repo to your directory
+2. Clone this ansible repo [https://github.com/ridwanbejo/ansible-secure-elasticsearch](https://github.com/ridwanbejo/ansible-secure-elasticsearch) because we need to bootstrap the Elasticsearch
+
+3. Clone this repo to your directory
 
 3. Change your current directory to the repo
 
@@ -40,7 +42,7 @@ ec2-13-213-77-223.ap-southeast-1.compute.amazonaws.com
 
 ```
 
-4. Run the ansible playbook to install the Elasticsearch
+4. Run the cloned ansible playbook to install the Elasticsearch
 
 ```
 ansible-playbook -u ubuntu --private-key singapore-region-key-pair -e 'pub_key=singapore-region-key-pair.pub' elasticsearch-install.yml
@@ -80,7 +82,7 @@ ec2-13-213-77-225.ap-southeast-1.compute.amazonaws.com
 
 ```
 
-4. Run the ansible playbook to install the Elasticsearch
+4. Run the cloned ansible playbook to install the Elasticsearch
 
 ```
 ansible-playbook -u ubuntu --private-key singapore-region-key-pair -e 'pub_key=singapore-region-key-pair.pub' elasticsearch-cluster-install.yml
