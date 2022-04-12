@@ -4,7 +4,7 @@ It made by Terraform to provision Elasticsearch instance at AWS EC2.
 
 ## A. Prerequisites
 
-1. download AWS Secret
+1. Download AWS Secret and configure it by using `aws configure` from your console. Follow through the instruction and provide the correct value for each question.
 
 2. Clone this ansible repo [https://github.com/ridwanbejo/ansible-secure-elasticsearch](https://github.com/ridwanbejo/ansible-secure-elasticsearch) because we need to bootstrap the Elasticsearch
 
